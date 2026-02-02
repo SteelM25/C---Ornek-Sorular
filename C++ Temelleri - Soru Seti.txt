@@ -1,0 +1,209 @@
+🧱 C++ Temelleri – Soru Seti 1 (10 Soru)
+1️⃣ Temel Aritmetik & Kontrol Akışı
+
+Soru:
+Kullanıcıdan iki tam sayı al.
+
+Eğer ikisi de pozitifse çarpımlarını,
+
+Biri negatifse toplamlarını,
+
+İkisi de sıfırsa ekrana "Both zero" yazdır.
+
+📌 Amaç:
+
+if / else if / else
+
+Mantıksal operatörler
+
+Girdi kontrolü
+
+2️⃣ Döngüler & Koşullu Sayma
+
+Soru:
+Kullanıcıdan bir N değeri al.
+1 ile N arasındaki:
+
+çift sayıların toplamını,
+
+tek sayıların adedini
+ekrana yazdır.
+
+📌 Amaç:
+
+for döngüsü
+
+Mod (%) kullanımı
+
+Sayaç ve akümülatör mantığı
+
+3️⃣ Fonksiyon Yazma (Tek Sorumluluk)
+
+Soru:
+Bir sayı alan ve bu sayının asal olup olmadığını döndüren bir fonksiyon yaz.
+
+bool isPrime(int n);
+
+
+📌 Kurallar:
+
+1 ve negatif sayılar asal değildir.
+
+Ana programda bu fonksiyonu çağır.
+
+📌 Amaç:
+
+Fonksiyon tasarımı
+
+Return değeri
+
+Edge-case düşünme
+
+4️⃣ Faktöriyel – İteratif
+
+Soru:
+Kullanıcıdan bir sayı al ve iteratif (döngü ile) faktöriyelini hesapla.
+
+📌 Kurallar:
+
+Negatif sayı girilirse hata mesajı yazdır.
+
+0! = 1 unutulmayacak.
+
+📌 Amaç:
+
+Döngü mantığı
+
+Overflow farkındalığı (yorum satırında belirt)
+
+5️⃣ Faktöriyel – Rekürsif
+
+Soru:
+Aynı faktöriyel problemini bu kez rekürsif fonksiyon ile çöz.
+
+int factorial(int n);
+
+
+📌 Amaç:
+
+Base case kavramı
+
+Recursive çağrıyı doğru kurma
+
+Stack mantığına alışma
+
+6️⃣ Fibonacci Karşılaştırması
+
+Soru:
+Fibonacci dizisinin n inci elemanını:
+
+İteratif
+
+Rekürsif
+
+iki ayrı fonksiyonla hesapla ve aynı girdi için sonuçları yazdır.
+
+📌 Amaç:
+
+Performans farkını fark etmek
+
+Aynı problemi farklı yöntemlerle çözmek
+
+📌 Ek (zorunlu değil):
+Yorum satırında hangisinin neden daha yavaş olduğunu yaz.
+
+7️⃣ Sayı Ters Çevirme & Palindrom
+
+Soru:
+Kullanıcıdan bir tam sayı al.
+
+Sayının tersini hesapla
+
+Eğer sayı palindrom ise "Palindrome" yazdır
+
+📌 Örnek:
+
+Input: 12321
+Output: Palindrome
+
+
+📌 Amaç:
+
+Matematiksel işlemle digit ayırma
+
+while döngüsü
+
+Geçici değişken kullanımı
+
+8️⃣ Switch–Case ile Menü
+
+Soru:
+Kullanıcıya şu menüyü göster:
+
+1 - Kare al
+2 - Küp al
+3 - Mutlak değer
+
+
+Kullanıcının seçimine göre bir sayı üzerinde işlem yap.
+
+📌 Amaç:
+
+switch-case
+
+Menü tabanlı program yazma
+
+Default case kullanımı
+
+9️⃣ Basit Dizi Kullanımı
+
+Soru:
+Boyutu 5 olan bir dizi tanımla.
+Kullanıcıdan 5 sayı al ve:
+
+En büyük
+
+En küçük
+
+Ortalama
+değerleri yazdır.
+
+📌 Amaç:
+
+Dizi mantığı
+
+Döngü + karşılaştırma
+
+İlk değer atama (min/max bug’ı yaşamamak)
+
+🔟 Fonksiyon + Dizi (Birleştirme)
+
+Soru:
+Bir tamsayı dizisi ve boyut alan bir fonksiyon yaz:
+
+int countPositive(const int arr[], int size);
+
+
+Bu fonksiyon dizideki pozitif sayı adedini döndürsün.
+
+📌 Amaç:
+
+Dizi + fonksiyon birlikte kullanımı
+
+Parametre geçirme
+
+const farkındalığı
+
+🎯 Bu seti çözerken KURALLAR
+
+Bunlar çok önemli:
+
+Her soruyu tek dosyada çöz
+
+main() şişmesin → fonksiyon kullan
+
+Anlamlı değişken isimleri kullan
+
+En az 1 edge-case düşün (yorumla)
+
+Çalışan ama “çirkin” kodu kabul etme, düzelt
