@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 /*Sayı Ters Çevirme & Palindrom
@@ -14,18 +15,29 @@ Eğer sayı palindrom ise "Palindrome" yazdır
 
 Input: 12321
 Output: Palindrome
-
-
-📌 Amaç:
-
-Matematiksel işlemle digit ayırma
-
-while döngüsü
-
-Geçici değişken kullanımı*/
+*/
 
 int main(){
 
+    int sayi = 1;
     
+    string a;
+
+    
+    cout << "Sayi giriniz: ";
+    cin >> sayi;
+
+    if(sayi <= 0) cout << "pozitif deger giriniz.";
+
+    else{
+
+        //sayının tersini a değerine eşitledik.
+        for(int i = to_string(sayi).length() - 1; i >= 0; i--){
+            a += to_string(sayi)[i];
+        }
+            
+        if(a == to_string(sayi)) cout << "Palindrome\n";
+        else cout << "Palindrome değil.\n";
+    }
 
 }
