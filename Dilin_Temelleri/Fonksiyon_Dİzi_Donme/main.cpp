@@ -20,7 +20,7 @@ Parametre geçirme
 const farkındalığı*/
 
 int countPositive(const int arr[], int size){
-    int adet;
+    int adet = 0;
     for(int i = 0; i < size; i++){   
         if(arr[i] > 0) adet++;
     }

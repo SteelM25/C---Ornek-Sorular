@@ -1,0 +1,152 @@
+2) STL – Containers & Iterators (20 Soru)
+🔹 A) Vector / Deque / List (1–6)
+
+1️⃣ Vector Temelleri
+Kullanıcıdan n sayı al, bir vector’e koy.
+
+Tek sayıları sil
+
+Kalanları ters sırada yazdır
+
+👉 erase-remove idiom’unu öğren.
+
+2️⃣ Deque ile Kaydırmalı Pencere
+Bir dizide k uzunluklu sliding window maksimumlarını yazdır.
+
+deque kullan
+
+Zaman karmaşıklığı: O(n)
+
+3️⃣ List ile Güvenli Silme
+Bir list<int> içinde gezerken 3’ün katlarını sil.
+
+Iterator invalidation’a dikkat et
+
+4️⃣ Vector vs List Karşılaştırması
+Aynı işlemi iki şekilde yap:
+
+Ortadan 1000 eleman sil
+
+Hangisi daha mantıklı? Neden?
+
+📌 Kod + yorum yaz
+
+5️⃣ Deque Push/Pop Testi
+
+Baştan ve sondan ekleme/silme işlemleri yap
+
+vector ile neden mantıksız olduğunu açıkla
+
+6️⃣ Iterator ile Ters Yazdırma
+Bir vector’ü
+
+Normal iterator
+
+reverse_iterator
+ile yazdır
+
+🔹 B) Map / Unordered_Map (7–12)
+
+7️⃣ Frekans Sayma (Klasik)
+Bir string al → karakter frekanslarını yazdır.
+
+map ile
+
+unordered_map ile
+
+📌 Çıktı sırası farkını gözlemle.
+
+8️⃣ İlk Tekrar Eden Eleman
+Bir dizide ilk tekrar eden sayıyı bul.
+
+unordered_map önerilir mi? Neden?
+
+9️⃣ En Sık Görülen Eleman
+Bir dizide en çok geçen sayıyı bul.
+
+Tie-breaker: küçük olan kazanır
+
+🔟 Sliding Window – Anagram Kontrolü
+s içinde p’nin anagramı var mı?
+📌 Leetcode tarzı soru
+
+map ile çöz
+
+sonra unordered_map ile
+
+1️⃣1️⃣ Map Sıralı Özellik
+Bir map<int, int>’e rastgele veri ekle.
+
+Küçükten büyüğe
+
+Büyükten küçüğe
+yazdır
+
+1️⃣2️⃣ Unordered_Map Tuzağı
+Bir örnek üret:
+
+Aynı kod map ile çalışıyor
+
+unordered_map ile beklenmeyen sırada çıktı veriyor
+
+Neden?
+
+🔹 C) Set / Multiset (13–17)
+
+1️⃣3️⃣ Tekil Elemanlar
+Bir dizideki tekrarları sil.
+
+set kullan
+
+Sonucu vector’e aktar
+
+1️⃣4️⃣ K-En Büyük Eleman (Multiset)
+Bir dizide k. en büyük elemanı bul.
+
+multiset kullan
+
+Alternatif çözümü düşün (heap?)
+
+1️⃣5️⃣ İki Dizinin Ortak Elemanları
+
+set kullanarak
+
+tekrar etmeden yazdır
+
+1️⃣6️⃣ Multiset Frekans
+Bir dizide en az 2 kere geçen elemanları yazdır.
+
+1️⃣7️⃣ Set vs Vector
+
+100.000 rastgele sayı ekle
+
+Arama yap
+Hangisi daha hızlı? Neden?
+
+📌 Teorik + pratik karşılaştırma
+
+🔹 D) Pair / Tuple (18–20)
+
+1️⃣8️⃣ Pair ile Sıralama
+Bir vector<pair<int,int>> içinde:
+
+first artan
+
+eşitse second azalan
+şekilde sırala
+
+1️⃣9️⃣ Tuple Kullanımı
+Öğrenci bilgisi tut:
+(id, isim, not)
+
+Nota göre sırala
+
+Tuple unpacking kullan (tie / structured binding)
+
+2️⃣0️⃣ Gerçek Hayat Modelleme
+Bir log sistemi yaz:
+
+(timestamp, userId, action)
+
+Aynı user’ın işlemlerini grupla
+📌 map<userId, vector<tuple<...>>>
