@@ -37,7 +37,9 @@ int main(){
     remove_if(sayilar.begin(), sayilar.end(),
                    [](int x) { return x % 2 != 0; }),
     sayilar.end()
+
 );
+// sayilar.erase_if(sayilar, [](int x){ return x % 2 == 0; });      C++ 20 ile gelen daha net yöntem.
     
 
     //kalanları ters yazdıralım
