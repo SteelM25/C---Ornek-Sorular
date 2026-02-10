@@ -31,19 +31,6 @@ Hangisi daha mantıklı? Neden?
 
 📌 Kod + yorum yaz
 
-5️⃣ Deque Push/Pop Testi
-
-Baştan ve sondan ekleme/silme işlemleri yap
-
-vector ile neden mantıksız olduğunu açıkla
-
-6️⃣ Iterator ile Ters Yazdırma
-Bir vector’ü
-
-Normal iterator
-
-reverse_iterator
-ile yazdır
 
 🔹 B) Map / Unordered_Map (7–12)
 
